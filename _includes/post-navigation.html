@@ -1,0 +1,12 @@
+{% if page.date %}
+<nav class="navigation post-navigation" role="navigation">
+	<h2 class="screen-reader-text">Post navigation</h2>
+	<div class="nav-links">
+		{% if page.previous.url %}
+		<div class="nav-previous"><a href="{page.previous.url}}" rel="prev"><span class="meta-nav">Previous Post</span> {{page.previous.title}}</a></div>
+		{% endif %} {% if page.next.url %}
+		<div class="nav-next"><a href="{{page.next.url}}" rel="next"><span class="meta-nav">Next Post</span> {{page.next.title}}</a></div>
+		{% endif %}
+	</div>
+</nav>
+{% endif %}

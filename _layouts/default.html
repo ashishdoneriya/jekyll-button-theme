@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+	{% include head.html %}
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
+	<body class="post-template-default single single-post postid-638 single-format-standard group-blog user-background">
+		<div id="page" class="hfeed site">
+			{% include header.html %}
+			{% include menu.html %}
+			<div id="page" class="hfeed site">
+				<div id="content" class="site-content">
+					<div id="primary" class="content-area">
+						<main id="main" class="site-main" role="main">
+							{{ content }}
+							{% include post-navigation.html %}
+							<div id="comments" class="comments-area">
+							</div>
+						</main>
+					</div>
+					<div id="secondary" class="widget-area" role="complementary">
+						<aside id="custom_html-2" class="widget_text widget widget_custom_html">
+							<div class="textwidget custom-html-widget">
+								<!-- google ads-->
+							</div>
+						</aside>
+						<aside id="wpp-2" class="widget popular-posts">
+							<h1 class="widget-title">Top Articles</h1>
+							<ul class="wpp-list">
+								<li> <a href="http://csetutorials.com/deploy-angular-2-maven-webapp-on-tomcat.html" title="Deploy Angular 2 Maven WebApp on Tomcat" class="wpp-post-title" target="_self">Deploy Angular 2 Maven WebApp on Tomcat</a></li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+				{% include foote.html %}
+			</div>
+		</div>
+	</body>
 
 </html>
