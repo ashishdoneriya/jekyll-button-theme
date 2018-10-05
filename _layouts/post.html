@@ -1,42 +1,29 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-</article>
-
-
-
-<article id="post-638" class="post-638 post type-post status-publish format-standard hentry category-ubuntu tag-linux tag-ssh tag-ubunu">
-		<header class="entry-header">
-			<span class="cat-links">
-				<a href="http://csetutorials.com/topics/ubuntu" rel="category tag">Ubuntu</a>
+<article class="post type-post status-publish format-standard hentry category-ubuntu tag-linux tag-ssh tag-ubunu">
+	<header class="entry-header">
+		{% if page.categories %}
+		<span class="cat-links">
+			<a href="{{ page.category.url }}" rel="category tag">{{ page.categories }}</a>
+		</span>
+		{% endif %}
+		<h1 class="entry-title">{{ page.title }}</h1>
+		<div class="entry-meta">
+			<span class="posted-on">
+				<a href="http://csetutorials.com/passwordless-ssh-ubuntu-linux.html" rel="bookmark"><time class="entry-date published updated" itemprop="dateModified" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time></a>
 			</span>
-			<h1 class="entry-title">Passwordless SSH on Ubuntu Linux</h1>
-			<div class="entry-meta">
-				<span class="posted-on">
-					<a href="http://csetutorials.com/passwordless-ssh-ubuntu-linux.html" rel="bookmark"><time class="entry-date published updated" itemprop="dateModified" datetime="2017-06-30T12:20:32+00:00">June 30, 2017</time></a>
-				</span>
-				<span class="byline">
-					<span class="author vcard"><a class="url fn n" href="http://csetutorials.com/author/ashishdoneriya">Ashish Doneriya</a></span>
-				</span>
-			</div>
-		</header>
-		<div class="entry-content">
-			<p>That’s it.</p>
-			<p>You can test on your machine.</p>
-			<p>When you ssh localhost, it will not ask you password again.</p>
+			{% if page.author %}
+			<span class="byline">
+				<span class="author vcard"><a class="url fn n" href="http://csetutorials.com/author/ashishdoneriya">{{ page.author }}</a></span>
+			</span>
+			{% endif %}
 		</div>
-		<footer class="entry-footer">
-			<div class="tags-links"><a href="http://csetutorials.com/tag/linux" rel="tag">linux</a> <a href="http://csetutorials.com/tag/ssh" rel="tag">ssh</a> <a href="http://csetutorials.com/tag/ubunu" rel="tag">ubunu</a></div>
-		</footer>
-	</article>
+	</header>
+	<div class="entry-content">
+		{{ content }}
+	</div>
+	<footer class="entry-footer">
+		<div class="tags-links"><a href="http://csetutorials.com/tag/linux" rel="tag">linux</a> <a href="http://csetutorials.com/tag/ssh" rel="tag">ssh</a> <a href="http://csetutorials.com/tag/ubunu" rel="tag">ubunu</a></div>
+	</footer>
+</article>

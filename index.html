@@ -1,23 +1,33 @@
 ---
 layout: default
 ---
+{% for post in site.posts %}
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<article id="post-1091" class="post-1091 post type-post status-publish format-standard hentry category-ide category-ubuntu tag-programming tag-ubuntu">
+	<header class="entry-header">
+		<span class="cat-links">
+			{% for category in post.categories %}
+			<a href="{{ category.url }}" rel="category tag"> {{ category.name }}</a>
+			{% endfor %}
+		</span>
+		<h1 class="entry-title">
+			<a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark">{{ post.title }}</a>
+		</h1>
+		<div class="entry-meta">
+			<span class="posted-on">
+				<a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark">
+					<time class="entry-date published updated" itemprop="dateModified" datetime="{{ post.date }}">{{post.date}}</time>
+				</a>
+			</span>
+			<span class="byline">
+				<span class="author vcard">
+					<a class="url fn n" href="{{post.author.url}}">{{ post.author}}</a>
+				</span>
+			</span>
+	</header>
+	<div class="entry-summary">
+		<p>{{post.excerpt}}</p>
+	</div>
+	<footer class="entry-footer"></footer>
+</article>
+{% endfor %}
