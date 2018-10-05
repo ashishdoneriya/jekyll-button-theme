@@ -1,0 +1,176 @@
+	@import 'https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Ubuntu+Mono|Oswald:400,700';
+
+			.site-title a,
+			.site-title a:visited {
+				color: #59554e;
+				font-size: 48px;
+				font-style: normal;
+				font-weight: bold;
+				font-family: serif !important;
+			}
+
+			.site-description {
+				color: #666;
+			}
+
+			body {
+				background: #555;
+			}
+
+			* {
+				font-family: 'Roboto', sans-serif !important;
+				font-style: normal !important;
+			}
+
+			[class*="code"] {
+				font-size: 16px;
+				line-height: 25px;
+				font-family: 'Ubuntu Mono' !important;
+				color: #444;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 25px;
+				color: #444;
+				text-align: justify;
+			}
+
+			article {
+				font-size: 18px;
+				line-height: 28px;
+				color: #444;
+				text-align: justify;
+			}
+
+			div p {
+				font-size: 16px;
+				line-height: 25px;
+				color: #444;
+				text-align: justify;
+			}
+
+			::selection {
+				background-color: #333;
+				color: #fff;
+			}
+
+			code {
+				font-size: 18px;
+				line-height: 28px;
+				font-family: 'Ubuntu Mono' !important;
+				color: #222;
+			}
+
+			/******************************* My Custom Part *******************************/
+			.widget-area a {
+				font-size: 16px;
+				color: #474747;
+			}
+
+			.entry-title a {
+				font-family: Oswald !important;
+			}
+
+			.entry-meta a,
+			.entry-meta a:visited,
+			.entry-footer a,
+			.entry-footer a:visited {
+				color: #777 !important;
+			}
+
+			.widget-title {
+				font-style: normal !important;
+				font-size: 18px !important;
+				font-family: Roboto !important;
+				color: #555 !important;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.widget-title::before {
+				display: none;
+			}
+
+			/******************************* Note *******************************/
+			h3.note:before,
+			h4.note:before,
+			h5.note:before,
+			h6.note:before,
+			h2.note:before {
+				margin: 0 15px -6px 0 !important;
+				content: '';
+				background: #4A4A4A url('http://www.healthutils.com/wp-content/uploads/2016/04/note.png') center no-repeat;
+			}
+
+			h3.note strong,
+			h3.note b,
+			h4.note strong,
+			h4.note b,
+			h5.note strong,
+			h5.note b,
+			h6.note strong,
+			h6.note b,
+			h2.note strong,
+			h2.note b,
+			h1.note strong,
+			h1.note b {
+				padding: 15px 0 0;
+				font-size: 18px;
+				font-style: normal;
+			}
+
+			.note a {
+				color: #fff;
+				text-decoration: none;
+			}
+
+			.note:before {
+				padding: 24px 27px;
+				display: inline-block;
+				margin: 0 15px -7px 0;
+				content: '' !important;
+				background: #4A4A4A url('http://www.healthutils.com/wp-content/uploads/2016/04/note.png') center no-repeat;
+			}
+
+			.note {
+				margin-bottom: 20px;
+				background-color: #4494CD;
+				color: #fff;
+				padding: 0 10px 0 0;
+			}
+
+			h3.note {
+				line-height: 1 !important;
+			}
+
+			.note strong,
+			.note b {
+				font-weight: normal;
+				font-size: 18px;
+				display: inline-block;
+				vertical-align: top;
+				padding: 11px 0 0;
+				color: #fff;
+			}
+
+			/* Enter Your Custom CSS Here */
+
+			* {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			p,
+			article,
+			div p {
+				font-size: 18px !important;
+				line-height: 26px !important;
+				font-family: "FreeSans" !important;
+			}
+
+			pre, pre *, p code, code, code *, [class*="code"] {
+				font-size: 18px !important;
+				line-height: 28px !important;
+				font-family: "ubuntu mono" !important;
+			}
