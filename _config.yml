@@ -2,7 +2,7 @@
 title: Cse Tutorials
 email: ashishdoneriya@gmail.com
 description: Tutorials about WebApp, Web designing, Java, Ubuntu
-baseurl: "/jekyll-button-theme" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-button-theme/" # the subpath of your site, e.g. /blog
 url: "http://ashishdoneriya.github.io" # the base hostname & protocol for your site
 twitter_username: ashishdoneriya
 github_username:  ashishdoneriya
