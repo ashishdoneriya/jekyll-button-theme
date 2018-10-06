@@ -9,3 +9,5 @@ github_username:  ashishdoneriya
 
 # Build settings
 markdown: kramdown
+
+permalink: /:title.html
